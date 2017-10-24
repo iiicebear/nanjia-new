@@ -1,0 +1,13 @@
+<link href="{CSS_PATH}style/style.css" rel="stylesheet" type="text/css" />
+<div class="slider">
+    <div class="slider-img">
+        <ul class="slider-img-ul">
+            {pc:content action="lists" catid="6" num="5"}
+                {loop $data $val}
+                    <li><img src="{$val[thumb]}"></li>
+                {/loop}
+            {/pc}
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="{JS_PATH}slide/xSlider.js"></script>
